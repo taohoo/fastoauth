@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "fastoauth"
+version = "0.1.1"
+description = ""
+authors = ["taohoo <taohoo@163.com>"]
+license = "MIT"
+readme = "README.MD"
+include = [
+    "README.md",
+    "README_zh.md"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+uvicorn = ">=0.30.0"
+fastapi = ">=0.100.0"
+pydantic = ">=1.10.10"
+python-jose = ">=3.3.0"
+pyopenssl = ">=24.0.0"
+redis = ">=5.0.5"
+python-multipart = ">=0.0.9"
+
+[tool.poetry.dev-dependencies]
+setuptools = ">=70.0.0"
+pytest = ">=8.2.2"
+virtualenv = ">=20.26.0"
+poetry = ">=1.8.3"  # 注意：通常不需要显式列出poetry作为dev依赖，除非有特殊需求
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
